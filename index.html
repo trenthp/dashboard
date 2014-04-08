@@ -1,9 +1,10 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
-		<meta http-equiv="Cache-control" content="no-cache" />
-		
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    
       <style type="text/css">
         @font-face
         {
@@ -45,6 +46,17 @@
           background: transparent !important;
         }
 
+        #Container
+        {
+          width: 506px;
+          height: 250px;
+          text-align: center;
+        }
+        #Container *
+        {
+          font-weight: normal;
+        }
+
         h1
         {
           font-size: 120px;
@@ -71,46 +83,48 @@
           background: rgb(0, 186, 0);
         }
       
-		</style>
-	
-		
-	</head>
-	
-	<body onload="init()">
+    </style>
+  
+    
+  </head>
+  
+  <body onload="init()">
+  <div id="main">
+
+    <div id="Container">
 
       <h2>classes in this room</h2>
-      <table id="classes">
+      <table id="projects">
         <tr>
-          <td class="className">Web I</td>
-          <td class="classTime">10:00 - 12:00</td>
+          <td class="projectName">Web I</td>
+          <td class="projectVersion">10:00 - 12:00</td>
         </tr>
         <tr>
-          <td class="className">empty</td>
-          <td class="classTime">12:00-1:30</td>
+          <td class="projectName">empty</td>
+          <td class="projectVersion">12:00-2:00</td>
+        </tr>
+        <tr>
+          <td class="projectName">Web II</td>
+          <td class="projectVersion">2:00 - 4:00</td>
+        </tr>
+        <tr>
+          <td class="projectName">empty</td>
+          <td class="projectVersion">4:00-5:00</td>
         </tr>
         <tr class="timeNow">
-          <td class="className">Web II</td>
-          <td class="classTime">1:30 - 3:30</td>
-        </tr>
-        <tr>
-          <td class="className">empty</td>
-          <td class="classTime">3:30-4:30</td>
-        </tr>
-        <tr>
-          <td class="className">Web Lab</td>
-          <td class="classTime">4:30-6:30</td>
+          <td class="projectName">Web Lab</td>
+          <td class="projectVersion">5:00-7:00</td>
         </tr>
       </table>
 
+    </div><!-- spacepeopleContainer -->
+
+  </div><!-- main -->
 <script type="text/javascript">
 
-		function refresh()
-		{
+    
 
-		}
-
-		
-
-		</script>
-	</body>
+    </script>
+  </body>
 </html>
+
